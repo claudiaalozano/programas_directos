@@ -8,3 +8,5 @@ for i in range(numeros):
 
 suma = suma / 3 
 print ("La media aritmética es: " , suma )
+suma = round (suma)
+print ("La media ponderada es: " , suma)
