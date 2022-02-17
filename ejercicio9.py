@@ -5,4 +5,6 @@ numero3= numeros.append(float(input("Introduzca el tercer número: ")))
 suma= 0
 for i in range(numeros):
     suma = i + numeros
-    
+
+suma = suma / 3 
+print ("La media aritmética es: " , suma )
