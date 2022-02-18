@@ -24,5 +24,5 @@ if operacion == "retirar":
         print("Con la retirada de " , retirar_dinero , " su saldo disminuye a un total de " , saldo , "€")
     if saldo < 0:
         saldo = saldo * -1
-        print("Usted no tiene saldo en la cuenta, además debe un total de  " , saldo , "€")
+        print("Con la retirada de " , retirar_dinero ,"Usted no tiene saldo en la cuenta, además debe un total de  " , saldo , "€")
     
