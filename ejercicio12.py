@@ -8,7 +8,7 @@ if cuenta == "si":
     abono= int(input("Introduzca el dinera desea abonar:"))
     saldo = abono
 
-operacion = input("¿Desea hacer otra operación más como consultar dinero,retiar o abonar?")
+operacion = input("¿Desea hacer otra operación más como consultar dinero,retirar o abonar?")
 if operacion == "no":
     print("Vale gracias por consultar este banco. Hasta pronto.")
 if operacion == "abonar":
@@ -20,8 +20,9 @@ if operacion == "consultar":
 if operacion == "retirar":
     retirar_dinero= float(input("Introduzca el dinero que desea retirar: "))
     saldo = saldo - retirar_dinero
+    if saldo >= 0:
+        print("Con la retirada de " , retirar_dinero , " su saldo disminuye a un total de " , saldo , "€")
     if saldo < 0:
         saldo = saldo * -1
         print("Usted no tiene saldo en la cuenta, además debe un total de  " , saldo , "€")
-    if saldo >= 0:
-        print("Con la retirada de " , retirar_dinero , " su saldo disminuye a un total de " , saldo , "€")
+    
