@@ -1,12 +1,9 @@
-numeros=[]
-numero1= numeros.append(float(input("Introduzca el primer número: ")))
-numero2= numeros.append(float(input("Introduzca el segundo número: ")))
-numero3= numeros.append(float(input("Introduzca el tercer número: ")))
-suma= 0
-for i in numeros:
-    suma = i + suma
 
-suma = suma / 3 
-print ("La media aritmética es: " , suma )
-suma = round (suma)
-print ("La media ponderada es: " , suma)
+numero1= float(input("Introduzca el primer número: "))
+numero2= float(input("Introduzca el segundo número: "))
+numero3= float(input("Introduzca el tercer número: "))
+media = (numero1+ numero2 + numero3) / 3
+
+print ("La media aritmética es: " , media )
+mediaponderada = round (media)
+print ("La media ponderada es: " , mediaponderada)
