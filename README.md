@@ -14,7 +14,7 @@ vivienda = input("¿Que tipo de vivienda quiere calcular para el ibi? (casa/terr
 if vivienda == "casa":
     print("Usted debe pagar un total de 300€ ")
 if vivienda == "terreno":
-    print("Usted debe de pagar un total de 150€ ") ´´´
+    print("Usted debe de pagar un total de 150€ ")´´´
     
     
 Ejercicio 9: Media aritmética ponderada
@@ -30,24 +30,25 @@ media = (numero1+ numero2 + numero3) / 3
 
 print ("La media aritmética es: " , media )
 mediaponderada = round (media)
-print ("La media ponderada es: " , mediaponderada)```
+print ("La media ponderada es: " , mediaponderada)´´´
+
 
 
 Ejercicio 10: Área del triángulo
 
-
-
-
-
 1. Escribir un algoritmo que calcula el área de un triángulo del que se da la medida de un lado y la de la altura relativa a este lado.
 
 2. ¿Se puede utilizar este algoritmo para un triángulo rectángulo si se dan las medidas de sus dos lados perpendiculares?
+Si, debido a que un lado se toma como base y otro como la altura.
+
+```altura = float(input("Introduzca cuanto mide la altura del triángulo: "))
+base = float(input("Introduzca cuanto mide la base del triángulo: "))
+area= (altura * base) / 2
+print ("El área del triángulo es: " , area)
+´´´
+
 
 Ejercicio 11: Salario y horas extra
-
-
-
-
 
 El cálculo de una nómina tiene en cuenta el salario bruto asociado a las horas «normales» que debe hacer el empleado y las horas «extra» trabajadas en el mes. Las horas extra se remuneran según las siguientes normas administrativas:
 
@@ -63,11 +64,22 @@ Se podrá suponer que el cálculo siempre se usa para una cantidad de horas supe
 
 Encontrará una solución propuesta para este ejercicio en los elementos complementarios de este libro que están disponibles para descargar desde la página Información.
 
+```horas= int(input("Introduzca las horas extra que ha trabajado en este mes:"))
+#se cobra la hora a 17 euros
+horas_totales= horas + 35
+if horas_totales > 36 and horas_totales < 43:
+    horas_extra = float((horas * 17 )) * 1.25
+    sueldo = (35 * 17) + horas_extra
+    print("Usted ha trabajado un total de horas extra de " , horas , "por lo que su sueldo ha ascendido a un total de " , sueldo , ", y ha trabajado un total de " , horas_totales , "horas.")
+if horas_totales >= 44:
+    horas_extra2 = float((horas * 17)) * 1.50
+    sueldo2 = (35 * 17) + horas_extra2
+    print("Usted ha trabajado un total de horas extra de " , horas , "por lo que su sueldo ha ascendido a un total de " , sueldo2 , ", y ha trabajado un total de " , horas_totales , "horas.")
+    ´´´
+
+
+
 Ejercicio 12: Cuenta de depósito
-
-
-
-
 
 Se considera las cuentas de depósitos alojadas en un banco por los clientes. Solo se permite hacer una retirada si el saldo que queda en la cuenta no es negativo.
 
@@ -80,3 +92,32 @@ En determinadas circunstancias y para determinados clientes, la banca autoriza u
 3. Volver a hacer las definiciones previas para permitir estos descubiertos.
 
 El ejercicio está parcialmente resuelto en los elementos complementarios de este libro que están disponibles para descargar desde la página Información.
+
+```cuenta = input("Desea abrir una cuenta en el banco (si/no): ")
+
+if cuenta == "no":
+    print("Usted no desea abrir una cuenta en nustro banco. Muchas gracias.")
+if cuenta == "si":
+    saldo = 0
+    print("Primero debe abonar dinero en la cuenta.")
+    abono= int(input("Introduzca el dinera desea abonar:"))
+    saldo = abono
+
+operacion = input("¿Desea hacer otra operación más como consultar dinero,retirar o abonar?")
+if operacion == "no":
+    print("Vale gracias por consultar este banco. Hasta pronto.")
+if operacion == "abonar":
+    introducir_dinero= float(input("Introduzca el dinero de desea ingresar en la cuenta: "))
+    saldo = saldo + introducir_dinero
+    print("Su saldo es de " , saldo , "€")
+if operacion == "consultar":
+    print("El saldo de su cuenta es " , saldo , "€")
+if operacion == "retirar":
+    retirar_dinero= float(input("Introduzca el dinero que desea retirar: "))
+    saldo = saldo - retirar_dinero
+    if saldo >= 0:
+        print("Con la retirada de " , retirar_dinero , " su saldo disminuye a un total de " , saldo , "€")
+    if saldo < 0:
+        saldo = saldo * -1
+        print("Con la retirada de " , retirar_dinero ,"Usted no tiene saldo en la cuenta, además debe un total de  " , saldo , "€")
+        ´´´
