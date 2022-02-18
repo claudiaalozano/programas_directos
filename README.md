@@ -1,6 +1,6 @@
 # programas_directos
 He realizado 5 progamas directos en python.
-Mi dirección de Github es: 
+Mi dirección de Github es: https://github.com/claudiaalozano/programas_directos.git
 
 Ejercicio 8: Porcentajes, IVA e inversiones
 
