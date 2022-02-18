@@ -14,7 +14,8 @@ vivienda = input("¿Que tipo de vivienda quiere calcular para el ibi? (casa/terr
 if vivienda == "casa":
     print("Usted debe pagar un total de 300€ ")
 if vivienda == "terreno":
-    print("Usted debe de pagar un total de 150€ ")```
+    print("Usted debe de pagar un total de 150€ ")
+    ```
     
     
 Ejercicio 9: Media aritmética ponderada
@@ -30,7 +31,8 @@ media = (numero1+ numero2 + numero3) / 3
 
 print ("La media aritmética es: " , media )
 mediaponderada = round (media)
-print ("La media ponderada es: " , mediaponderada)```
+print ("La media ponderada es: " , mediaponderada)
+```
 
 
 
@@ -44,7 +46,8 @@ Si, debido a que un lado se toma como base y otro como la altura.
 ```altura = float(input("Introduzca cuanto mide la altura del triángulo: "))
 base = float(input("Introduzca cuanto mide la base del triángulo: "))
 area= (altura * base) / 2
-print ("El área del triángulo es: " , area)```
+print ("El área del triángulo es: " , area)
+```
 
 
 Ejercicio 11: Salario y horas extra
@@ -73,7 +76,8 @@ if horas_totales > 36 and horas_totales < 43:
 if horas_totales >= 44:
     horas_extra2 = float((horas * 17)) * 1.50
     sueldo2 = (35 * 17) + horas_extra2
-    print("Usted ha trabajado un total de horas extra de " , horas , "por lo que su sueldo ha ascendido a un total de " , sueldo2 , ", y ha trabajado un total de " , horas_totales , "horas.")```
+    print("Usted ha trabajado un total de horas extra de " , horas , "por lo que su sueldo ha ascendido a un total de " , sueldo2 , ", y ha trabajado un total de " , horas_totales , "horas.")
+```
 
 
 
@@ -117,4 +121,5 @@ if operacion == "retirar":
         print("Con la retirada de " , retirar_dinero , " su saldo disminuye a un total de " , saldo , "€")
     if saldo < 0:
         saldo = saldo * -1
-        print("Con la retirada de " , retirar_dinero ,"Usted no tiene saldo en la cuenta, además debe un total de  " , saldo , "€")```
+        print("Con la retirada de " , retirar_dinero ,"Usted no tiene saldo en la cuenta, además debe un total de  " , saldo , "€")
+```
